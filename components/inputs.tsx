@@ -2,7 +2,7 @@ import React from "react";
 
 interface InputProps {
   id: string;
-  onChange: any;
+  onChange: () => void;
   value: string;
   label: string;
   type?: string;
@@ -46,9 +46,9 @@ const Input: React.FC<InputProps> = ({ id, onChange, value, label, type }) => {
             z-10
             origin-[0]
             left-6
-            peer-placeholder-shown: scale-100
-            peer-placeholder-shown: translate-y-0
-            peer-focus: scale-75
+            peer-placeholder-shown:scale-100
+            peer-placeholder-shown:translate-y-0
+            peer-focus:scale-75
             peer-focus:-translate-y-3
         "
         htmlFor={id}>

@@ -2,7 +2,6 @@ import React from "react";
 import { useRouter } from "next/router";
 
 import { isEmpty } from "lodash";
-import { loadStaticPaths } from "next/dist/server/dev/static-paths-worker";
 
 import { BsFillPlayFill } from "react-icons/bs";
 import { BiChevronDown } from "react-icons/bi";
@@ -10,16 +9,16 @@ import { BiChevronDown } from "react-icons/bi";
 import FavoriteButton from "./FavoriteButton";
 import useInfoModal from "@/hooks/useInfoModal";
 interface MovieCardProps {
-  data: Record<string, any>;
+  data: Record<string, string>;
 }
 
 const MovieCard: React.FC<MovieCardProps> = ({ data }) => {
+  const router = useRouter();
+  const { openModal } = useInfoModal();
   if (isEmpty(data)) {
     return null;
   }
 
-  const router = useRouter();
-  const { openModal } = useInfoModal();
   return (
     <div className="group bg-zinc-900 col-span relative h-[12vw">
       <img

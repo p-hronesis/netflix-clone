@@ -8,7 +8,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     return res.status(405).end();
   }
   try {
-    let movies = [];
+    const movies = [];
     for (let index = 0; index < moviesJson.length; index++) {
       const { title, description, videoUrl, thumbnailUrl, genre, duration } =
         moviesJson[index];

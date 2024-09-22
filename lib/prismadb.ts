@@ -5,7 +5,7 @@ let client: PrismaClient;
 if (process.env.NODE_ENV === "production") {
   client = new PrismaClient();
 } else {
-  let globalWithPrisma = global as typeof globalThis & {
+  const globalWithPrisma = global as typeof globalThis & {
     client: PrismaClient;
   };
   if (!globalWithPrisma.client) {

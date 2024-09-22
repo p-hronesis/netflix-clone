@@ -4,7 +4,7 @@ import { isEmpty } from "lodash";
 import MovieCard from "./MovieCard";
 
 interface MovieListProps {
-  data: Record<string, any>[];
+  data: Record<string, string>[];
   title: string;
 }
 
