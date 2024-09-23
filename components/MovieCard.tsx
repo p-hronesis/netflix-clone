@@ -37,6 +37,9 @@ const MovieCard: React.FC<MovieCardProps> = ({ data }) => {
         "
         src={data.thumbnailUrl}
         alt="thumbnail"
+        onClick={() => {
+          router.push(`/watch/${data?.id}`);
+        }}
       />
       <div
         className="
@@ -69,6 +72,9 @@ const MovieCard: React.FC<MovieCardProps> = ({ data }) => {
         "
           src={data.thumbnailUrl}
           alt="thumbnail"
+          onClick={() => {
+            router.push(`/watch/${data?.id}`);
+          }}
         />
         <div
           className="
