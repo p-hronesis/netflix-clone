@@ -2,7 +2,7 @@ import React from "react";
 
 interface InputProps {
   id: string;
-  onChange: () => void;
+  onChange: (event: React.FormEvent<HTMLInputElement>) => void;
   value: string;
   label: string;
   type?: string;
