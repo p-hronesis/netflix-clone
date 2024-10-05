@@ -315,7 +315,7 @@ Project Link: [https://github.com/p-hronesis/netflix-clone](https://github.com/p
 
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+Big thank you to Code with Anthonio
 
 - Code with Anthonio [Website](https://www.codewithantonio.com/)
   [Youtube](https://www.youtube.com/@codewithantonio) [Github](https://github.com/antonioerdeljac)
