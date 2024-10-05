@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name" target="_blank">
+  <a href="https://github.com/p-hronesis/netflix-clone" target="_blank">
     <img src="public/favicon.ico" alt="Logo" width="80" height="80">
   </a>
 
